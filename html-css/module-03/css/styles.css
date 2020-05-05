@@ -39,7 +39,7 @@ body {
     }
 .main-menu{
     display: inline-block;
-    width: 1200;
+    width: 900px;
     background-color: rgb(255, 255, 255);
     margin-left: 0px;
     padding: 0px;
@@ -136,7 +136,7 @@ a {
     list-style: none;
     padding: 0px;
     margin: 0px;
-    width: 900x;
+    width: 900px;
     margin-right: 0px;
     
 }
