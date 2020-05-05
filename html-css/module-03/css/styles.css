@@ -8,9 +8,7 @@ html{
     box-sizing: inherit;
 }
 body {
-    
-    
-    box-sizing: content-box;
+      box-sizing: content-box;
     width: 900px;
     height: 2077px ;
     font-size: 14px;
@@ -19,9 +17,10 @@ body {
     line-height: 24px;
     font-family: 'Playfair Display','Arial', serif;
     color: #626262;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 150px;
+    margin-right: 150px;
     text-align: center;
+    padding: 0 auto;
 
     background-color: antiquewhite;
 }
@@ -112,17 +111,18 @@ p{
     width: 420px;
     margin-right: 0px;
     margin-left: 0px;
+    margin-bottom: 125px;
     background-color: mediumseagreen;
     
 
 }
-.inline-a.inline-a:nth-child(2n){
-    margin-right:0;
+().inline-a.inline-a:nth-child(2n){
+    margin-right:0;)
 }
-.main-content:nth-child(1n){
+ (.main-content:nth-child(1n){
     margin-left: 0px;
 
-}
+})
 .main-content{
     list-style: none;
     padding: 0px;
@@ -133,3 +133,47 @@ p{
 .main-content:last-child {
     margin: 0px;
 }
+.main-content{
+    padding: 0;
+
+}
+.main-content li{
+    padding: 0;
+ margin-bottom: 125px;
+ margin-right: 56px;   
+}
+.main-content li:nth-child(2n){
+    margin-right: 0px;
+}
+.main-content li:nth-last-child(-n+2){
+    margin-bottom: 0px;
+    padding: 0px
+    ;
+
+}
+li{padding: 0px;
+}
+ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+p{
+    text-align: left;
+    margin-top: 20px;
+    background-color: orange;
+}
+h3 {
+    text-align: left;
+    background-color: maroon;
+    margin-top: 26px
+    margin-bottom-26px
+
+}
+li{
+
+
+    background-color: #b4ad9e;
+    text-align: left;
+    }
+ 
