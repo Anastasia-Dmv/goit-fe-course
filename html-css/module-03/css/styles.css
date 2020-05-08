@@ -6,45 +6,36 @@ html{
 *::after{
     box-sizing: inherit;
 }
+
+
+
 body{
     box-sizing: border-box;
-    width: 1200px;
-    height: 2077px;
-    margin: auto;
-    font-size: 0;
-    line-height: 0px;
+    margin: 0 auto;
     font-family:'Playfair Display', 'Arial', serif;
     
 }
 /*--navigator--*/
 
-
-.main-menu-items{
-    display: inline-block;
-    
-
-}
 .menu{
-    box-sizing: border-box;
-    width: 900px;
-    height: 190px;
-    padding-top:71px;
-    padding-left: 0;
-    margin: auto;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-
-
+    
+    padding-top:70px;
+    padding-bottom: 96px;
 }
+.main-menu-items {
+    display: inline-block;
+    }
+
+
 .main-menu{
     padding: 0;
+    margin: 0;
+    font-size: 0;
+    text-align: center;
+    
 }
 .main-menu-items{
     margin-right: 30px;
-    text-transform: uppercase;
-    line-height: 24px;
-     
     
 }
 .main-menu-items:last-child{
@@ -53,20 +44,26 @@ body{
 
 
 .main-menu-link{
+    display: block;
     text-decoration: none;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 14px;
+   text-align: center;
+    
     color:#626262;
 }
-.main-menu-link:hover{
+.main-menu-link:hover,
+.main-menu-link:focus{
     color: #03a9f4;
 }
 /*--main section--*/
 .main-content{
     
-    box-sizing: border-box;
+    font-size: 0;
     width: 900px;
-    height: 1700px;
     margin: auto;
-    padding: 0;
+    padding: 0 ;
     
     
 }
@@ -74,12 +71,16 @@ body{
     list-style: none;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 52px;
+}
+.content{
+    padding-bottom: 70px;
 }
 .content-items{
     display: inline-block;
     width: 420px;
-    margin-right: 50px;
-    margin-bottom: 108px;
+    margin-right: 60px;
+    margin-bottom: 112px;
 }
 .content-items:nth-of-type(2n){
     margin-right: 0;
@@ -101,16 +102,16 @@ p{
     line-height: 17px;
     text-transform: uppercase;
     color: #b4ad9e;
-    margin-top: 28px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
+    margin-top: 0;
 }
 h3{
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
     color: #626262;
-    margin-top: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
+    margin-top: 0;
 }
 
 /*---button--*/
@@ -123,8 +124,8 @@ h3{
     text-align: center;
     color: #626262;
     margin: auto;
-    margin-bottom: 70px;
-    margin-top: 52px;
+    padding: 0px;
+    
 }
 .load-more:hover{
     color:#03a9f4;
@@ -147,4 +148,7 @@ input[type="radio"].visually-hidden {
     clip: rect(0 0 0 0);
     overflow: hidden;
 
+}
+img{
+    margin-bottom: 26px;
 }
