@@ -11,35 +11,38 @@ html{
 
 body{
     box-sizing: border-box;
-    margin: 0 auto;
     font-family:'Playfair Display', 'Arial', serif;
     
 }
 /*--navigator--*/
+
 
 .menu{
     
     padding-top:70px;
     padding-bottom: 96px;
 }
-.main-menu-items {
-    display: inline-block;
-    }
-
 
 .main-menu{
-    padding: 0;
-    margin: 0;
+   padding: 0;
     font-size: 0;
     text-align: center;
+    margin: 0;
     
+}
+.main-menu-items a{
+    display:block;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .main-menu-items{
-    margin-right: 30px;
-    
+    margin-right: 0px;
+    display: inline-block;
 }
+
 .main-menu-items:last-child{
     margin-right: 0;
+    
 }
 
 
@@ -49,23 +52,25 @@ body{
     text-transform: uppercase;
     line-height: 24px;
     font-size: 14px;
-   text-align: center;
+    text-align: center;
     
     color:#626262;
 }
+
 .main-menu-link:hover,
 .main-menu-link:focus{
     color: #03a9f4;
 }
 /*--main section--*/
+
+.content{
+    padding-bottom: 70px;
+}
 .main-content{
-    
-    font-size: 0;
     width: 900px;
-    margin: auto;
+    margin:0 auto;
     padding: 0 ;
-    
-    
+    font-size: 0;   
 }
 .main-content-list{
     list-style: none;
@@ -73,9 +78,7 @@ body{
     margin: 0px;
     margin-bottom: 52px;
 }
-.content{
-    padding-bottom: 70px;
-}
+
 .content-items{
     display: inline-block;
     width: 420px;
@@ -92,11 +95,7 @@ body{
 
 /*--text--*/
 
-.lorem{
-    font-size: 14px;
-    line-height: 24px;
-    color:#626262;
-}
+
 p{
     font-size: 14px;
     line-height: 17px;
@@ -116,16 +115,16 @@ h3{
 
 /*---button--*/
 .load-more{
-    font-size: 20px;
-    line-height: 24px;
     display: block;
-    width: 166px;
-    height: 60px;
-    text-align: center;
-    color: #626262;
     margin: auto;
     padding: 0px;
-    
+    width: 166px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #626262;
+       
 }
 .load-more:hover{
     color:#03a9f4;
@@ -151,4 +150,11 @@ input[type="radio"].visually-hidden {
 }
 img{
     margin-bottom: 26px;
+}
+p.lorem {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
+    margin-bottom: 0;
+    color:#626262;
 }
