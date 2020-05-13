@@ -237,9 +237,7 @@ p {
 .news-items {
     display: block;
     padding: 0;
-
     width: 350px;
-    height: 500px;
     float: left;
     margin-right: 30px;
 }
