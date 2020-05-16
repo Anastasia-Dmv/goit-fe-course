@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.parent {
+  height: 500px;
+  width: 500px;
+  background-color: #0a1f2b;
+}
