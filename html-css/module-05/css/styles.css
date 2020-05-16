@@ -7,8 +7,12 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  outline: 3px solid royalblue;
+}
 
 .parent {
+  font-size: 30px;
   height: 500px;
   width: 500px;
   background-color: #0a1f2b;
