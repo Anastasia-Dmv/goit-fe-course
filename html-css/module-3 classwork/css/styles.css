@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* {
+    outline: 1px solid blue;
+}*/
+
+* body {
+    box-sizing: border-box;
+    margin: auto;
+}
