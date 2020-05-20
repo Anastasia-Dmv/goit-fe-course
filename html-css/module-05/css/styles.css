@@ -10,7 +10,7 @@ html {
   padding: 0;
 }
 
-* {
+ {
   outline: 3px solid royalblue;
 }
 
@@ -213,16 +213,23 @@ body {
   margin-top: 35px;
 }
 .photo-content {
-  
-  background: linear-gradient(to top,black  30% , )
-  );
+  opacity: %;
+  /*--
+  background-image: linear-gradient(
+    to top,
+    rgba(30, 87, 153, 1),
+    rgba(30, 87, 153, 0.8)
+  );--*/
 }
 
 /*--PRODUCT AND PRICE--*/
 
 .photo-content-name {
+  padding: 0;
+  margin: 0;
   position: relative;
   font-family: "Roboto", sans-serif;
+  color: white;
   font-size: 18px;
   line-height: 32px;
   font-weight: 600;
@@ -231,11 +238,23 @@ body {
 .photo-content-price {
   position: absolute;
   right: 0;
-  transform: translateY(-100%);
+  width: 55px;
+  height: 41px;
+  text-align: center;
+
+  bottom: -37px;
+  background-color: rgba(255, 255, 255, 0.44);
 }
 
 .photo-content-product {
   position: absolute;
   left: 0;
-  transform: translateY(-100%);
+  padding-left: 14px;
+}
+.collection-list-item {
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0) 0% 13%,
+    white 13% 100%
+  );
 }
