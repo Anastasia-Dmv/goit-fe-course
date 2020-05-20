@@ -22,8 +22,7 @@ ol {
 }
 
 body {
-  font-family: 'Open Sans', 'Roboto',
-    sans-serif;
+  font-family: "Open Sans", "Roboto", sans-serif;
   font-size: 0;
 }
 
@@ -48,9 +47,7 @@ body {
 }
 
 .logo::first-letter {
-
   color: #1abc9c;
-
 }
 
 .navigation-list {
@@ -60,8 +57,6 @@ body {
 .navigation-list-item {
   display: inline-block;
   margin-top: 6px;
-
-
 }
 
 .clearfix::after {
@@ -72,14 +67,13 @@ body {
 
 .navigation-list-item-link {
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
   color: #000000;
   padding: 0 15px;
-
 }
 
 .navigation-list-item-link:hover {
@@ -89,8 +83,7 @@ body {
 /*--SLIDER__*/
 
 .slider {
-
-  background-image: linear-gradient(rgba(0, 0, 0, .52), rgba(0, 0, 0, .52)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
     url(../images/slide4.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,8 +94,6 @@ body {
   width: 1110px;
   height: 600px;
   margin: 0 auto;
-
-
 }
 
 /*--BUTTON--*/
@@ -118,7 +109,6 @@ body {
 }
 
 .prev {
-
   background-image: url(../images/prev.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -135,28 +125,24 @@ body {
   background-position: center;
 }
 
-
 .button:hover {
-  background-color: rgba(78, 198, 171, .65);
+  background-color: rgba(78, 198, 171, 0.65);
 }
 
 /*--TEXT--*/
 .slider-title {
-
   position: absolute;
   bottom: 45%;
 
   left: 15%;
   margin: 0 auto;
   width: 760px;
-
 }
 
 .slider-title-item {
   position: absolute;
   left: 0;
   bottom: 50%;
-
 
   font-size: 60px;
   font-family: "Roboto", sans-serif;
@@ -167,9 +153,6 @@ body {
   text-align: center;
   margin-bottom: 28px;
   letter-spacing: -1px;
-
-
-
 }
 
 .slider-title-options {
@@ -181,11 +164,9 @@ body {
   text-transform: uppercase;
   line-height: 20px;
   text-align: center;
-
 }
 
 /*--COLLECTION--*/
-
 
 .collection-container {
   padding-top: 100px;
@@ -197,10 +178,7 @@ body {
 
 .collection-list {
   float: left;
-
 }
-
-
 
 .collection-list-item {
   display: inline-block;
@@ -209,9 +187,55 @@ body {
   margin-right: 30px;
   font-size: 14px;
   line-height: 17px;
-
 }
 
-.collection-list-item:last-of-type {
+.collection-list-item:last-child {
   margin-right: 0;
+}
+.collection-title {
+  font-family: serif;
+  font-size: 48px;
+  line-height: 52px;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 81px;
+}
+.collection-title:after {
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 164px;
+  height: 10px;
+  background-color: #4ec6ab;
+  margin-top: 35px;
+}
+.photo-content {
+  
+  background: linear-gradient(to top,black  30% , )
+  );
+}
+
+/*--PRODUCT AND PRICE--*/
+
+.photo-content-name {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.photo-content-price {
+  position: absolute;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+.photo-content-product {
+  position: absolute;
+  left: 0;
+  transform: translateY(-100%);
 }
