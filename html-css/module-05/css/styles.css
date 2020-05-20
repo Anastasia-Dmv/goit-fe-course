@@ -269,19 +269,24 @@ body {
   height: 89%;
   border: 10px solid rgba(255, 255, 255, 0.11);
   background-clip: padding-box;
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay-content-list-icon-common {
-  width: 55px;
-  height: 55px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  margin-bottom: 8px;
   border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 
   background-repeat: no-repeat;
   background-position: center;
 
 }
+
+
 
 .heart {
   background-image: url(../images/\ cour.png);
@@ -321,7 +326,7 @@ body {
 }
 
 .overlay-content {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -335,5 +340,38 @@ body {
 
 .overlay-content-list-icon {
   float: left;
+  cursor: pointer;
+}
 
+.overlay-content-list-icon:nth-of-type(3) {
+  margin-right: 0;
+
+}
+
+.overlay-content-list-icon-common:hover {
+  background-color: #4ec6ab;
+  cursor: pointer;
+
+}
+
+.overlay-content-list-icon-common-basket:hover {
+  background-color: #4ec6ab;
+  cursor: pointer;
+
+}
+
+.photo-content-name:hover {
+  background-color: #4ec6ab;
+  cursor: pointer;
+
+}
+
+.overlay-content {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.collection-list-item:hover .overlay-content {
+  opacity: 1;
+  visibility: visible;
 }
