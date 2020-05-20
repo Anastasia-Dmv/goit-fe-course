@@ -294,3 +294,46 @@ body {
 .clock {
   background-image: url(../images/clock.png);
 }
+
+.overlay-content-list-icon-common-basket {
+  width: 166px;
+  height: 50px;
+  padding-right: 18px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-image: url(../images/stroll.png);
+  background-position-y: center;
+  background-position-x: 7px;
+  background-repeat: no-repeat;
+  text-align: end;
+
+
+
+  background-color: #323232;
+}
+
+.collection-list-item {
+  position: relative;
+}
+
+.overlay-content {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.overlay-content-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-content-list-icon {
+  float: left;
+
+}
