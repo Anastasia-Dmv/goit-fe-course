@@ -109,7 +109,7 @@ body {
   transform: translateX(-50%);
   width: 1110px;
   height: 600px;
-  background-color: rgba(0, 255, 255, 0.089);
+
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -149,7 +149,7 @@ body {
 .slider-title {
   position: absolute;
   top: 35%;
-  left: 13%;
+  left: 15%;
   width: 748px;
   margin: auto;
 }
@@ -374,4 +374,34 @@ body {
 .collection-list-item:hover .overlay-content {
   opacity: 1;
   visibility: visible;
+}
+
+.footer-rights {
+  background-color: #323232;
+  text-align: center;
+  margin: 0 auto;
+  padding: 34px;
+
+}
+
+
+
+.rights-text {
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Open Sans",
+    sans-serif;
+}
+
+.rights-text-link {
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.rights-text-link:hover {
+
+  color: #4ec6ab;
 }
