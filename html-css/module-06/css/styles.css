@@ -28,10 +28,6 @@ ol {
   --main-fz: 14px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 /*--font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;--*/
@@ -221,7 +217,7 @@ font-family: 'Roboto', sans-serif;--*/
 
 .team {
   padding-top: 82px;
-  padding-bottom: 150px;
+  padding-bottom: 84px;
 }
 
 .container {
@@ -296,19 +292,20 @@ font-family: 'Roboto', sans-serif;--*/
 
 .overlay-gradient-list {
   display: flex;
-  
 }
 
 .overlay-gradient-list-link {
   display: block;
   width: 55px;
   height: 55px;
-  
-
   background-color: #fce38a;
+  border-right: 1px solid rgb(243, 129, 129);
 }
 
+.insta {
+  border: none;
 }
+
 .overlay-gradient-list-link:hover {
   background-color: #95e1d3;
 }
@@ -322,7 +319,6 @@ font-family: 'Roboto', sans-serif;--*/
 
 .list-item-image {
   display: block;
-
   background-color: rgba(101, 216, 224, 0.438);
 }
 
@@ -417,9 +413,7 @@ font-family: 'Roboto', sans-serif;--*/
   width: 230px;
   height: 40px;
   font-weight: 300;
-
   font-family: "Roboto";
-
   font-size: 15px;
   line-height: 24px;
   font-style: italic;
