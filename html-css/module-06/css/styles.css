@@ -29,8 +29,7 @@ ol {
 }
 
 body {
-  font-family: "Roboto",
-    sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*--font-family: 'Kaushan Script', cursive;
@@ -68,7 +67,7 @@ font-family: 'Roboto', sans-serif;--*/
   transition: color 200ms linear;
 }
 
-.navigation-list-item::after {
+.navigation-list-item-link::after {
   display: block;
   content: " ";
   width: 100%;
@@ -78,16 +77,15 @@ font-family: 'Roboto', sans-serif;--*/
   opacity: 0;
   visibility: hidden;
 }
-
-/*--.navigation-list-item-link:focus--*/
-
-.navigation-list-item:hover::after {
-  opacity: 1;
-  visibility: visible;
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
+  color: #f38181;
 }
 
-.navigation-list-item-link:hover {
-  color: #f38181;
+.navigation-list-item-link:hover::after,
+.navigation-list-item-link:focus::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .logo {
@@ -110,11 +108,11 @@ font-family: 'Roboto', sans-serif;--*/
 
 .cursive {
   font-size: 24px;
-  line-height: 27px;
+  line-height: 50px;
   font-family: "Kaushan Script";
   text-align: center;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 64px;
 }
 
 .uppercase {
@@ -152,7 +150,7 @@ font-family: 'Roboto', sans-serif;--*/
   position: relative;
 }
 
-.services-info-list-item:nth-last-child(-n+3) {
+.services-info-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
@@ -184,37 +182,37 @@ font-family: 'Roboto', sans-serif;--*/
 }
 
 .alarm::before {
-  background-image: url(../images/6m/icons/ALARM.png);
+  background-image: url(../images/6m/icons/1alarm.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .linegraph::before {
-  background-image: url(../images/6m/icons/2LINE\ GRAPH.png);
+  background-image: url(../images/6m/icons/2graph.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .comp::before {
-  background-image: url(../images/6m/icons/3COMPUTER\ _\ OK.png);
+  background-image: url(../images/6m/icons/3comp.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .book::before {
-  background-image: url(../images/6m/icons/4BOOK.png);
+  background-image: url(../images/6m/icons/4book.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .home::before {
-  background-image: url(../images/6m/icons/5HOME.png);
+  background-image: url(../images/6m/icons/5home.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .mage::before {
-  background-image: url(../images/6m/icons/6MAGE.png);
+  background-image: url(../images/6m/icons/6mage.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -233,12 +231,21 @@ font-family: 'Roboto', sans-serif;--*/
 
 .team-title-list-description {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .photo-list {
   display: flex;
   justify-content: space-between;
+}
+
+.cursive-team {
+  font-size: 24px;
+  line-height: 50px;
+  font-family: "Kaushan Script";
+  text-align: center;
+  color: #333333;
+  margin-bottom: 46px;
 }
 
 .team-title-list-description {
@@ -261,6 +268,7 @@ font-family: 'Roboto', sans-serif;--*/
 /*--OVERLAY STYLE--*/
 .overlay {
   position: relative;
+  margin-bottom: 27px;
 }
 
 .overlay-gradient {
@@ -272,29 +280,35 @@ font-family: 'Roboto', sans-serif;--*/
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(0deg,
-      rgba(252, 227, 138, 0.9),
-      rgba(243, 129, 129, 0.9));
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
 }
 
 .overlay-gradient {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0, 5s linear, box-shadow 0, 5s linear 0, 5s;
+  transition: all 0.2s linear;
 }
 
 .overlay-gradient-list {
   display: flex;
+  
 }
 
 .overlay-gradient-list-link {
   display: block;
   width: 55px;
   height: 55px;
+  
+
   background-color: #fce38a;
 }
 
+}
 .overlay-gradient-list-link:hover {
   background-color: #95e1d3;
 }
@@ -304,12 +318,11 @@ font-family: 'Roboto', sans-serif;--*/
   visibility: visible;
   transform: translate(-12px, -12px);
   box-shadow: 12px 12px 1px #95e1d3;
-  transition: transform 200ms linear, box-shadow 200ms linear 50ms;
 }
 
 .list-item-image {
   display: block;
-  margin-bottom: 27px;
+
   background-color: rgba(101, 216, 224, 0.438);
 }
 
@@ -360,19 +373,18 @@ font-family: 'Roboto', sans-serif;--*/
 
 /*--FOOTER--*/
 .footer-rights {
-
   padding-top: 24px;
   padding-bottom: 28px;
-
-
 }
 
-.footer-rights-position {
+.footer-rights {
   display: flex;
-  flex-direction: row;
-
+  justify-content: space-between;
+  align-items: center;
 }
-
+.form {
+  display: flex;
+}
 .footer-text {
   font-family: "Montserrat", serif;
   font-size: 14px;
@@ -385,15 +397,8 @@ font-family: 'Roboto', sans-serif;--*/
   color: #f38181;
 }
 
-
-.footer-rights::before {
-  display: block;
-  content: " ";
-
-  height: 1px;
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: rgb(229, 229, 229);
+.footer-rights {
+  border-top: 1px solid #cccccc;
 }
 
 .submit {
@@ -403,8 +408,7 @@ font-family: 'Roboto', sans-serif;--*/
   color: white;
   text-transform: uppercase;
   font-size: var(--main-fz);
-  font-family: "Montserrat",
-    serif;
+  font-family: "Montserrat", serif;
   font-weight: 600;
   border: none;
 }
@@ -415,10 +419,12 @@ font-family: 'Roboto', sans-serif;--*/
   font-weight: 300;
 
   font-family: "Roboto";
-  color: #cccccc;
+
   font-size: 15px;
   line-height: 24px;
   font-style: italic;
   border: 1px solid #cccccc;
-
+}
+::placeholder {
+  color: #cccccc;
 }
