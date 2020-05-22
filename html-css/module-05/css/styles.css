@@ -44,6 +44,7 @@ body {
   font-size: 30px;
   line-height: 32px;
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 
 .logo::first-letter {
@@ -224,6 +225,9 @@ body {
   color: white;
 }
 
+.photo-content {
+  display: block;
+}
 .photo-content-name {
   position: relative;
   width: 255px;
@@ -271,12 +275,15 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.overlay-content-list-icon {
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
 .overlay-content-list-icon-common {
   display: inline-block;
   width: 50px;
   height: 50px;
-  margin-right: 5px;
-  margin-bottom: 8px;
+
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -285,15 +292,15 @@ body {
 }
 
 .heart {
-  background-image: url(../images/\cour.png);
+  background-image: url(../images/cour.png);
 }
 
 .direction {
-  background-image: url(../images/direction.png);
+  background-image: url(../images/direction.png);
 }
 
 .clock {
-  background-image: url(../images/clock.png);
+  background-image: url(../images/clock.png);
 }
 
 .overlay-content-list-icon-common-basket {
@@ -306,7 +313,7 @@ body {
   line-height: 32px;
   font-weight: 300;
   text-transform: uppercase;
-  background-image: url(../images/stroll.png);
+  background-image: url(../images/stroll.png);
   background-position-y: center;
   background-position-x: 7px;
   background-repeat: no-repeat;
@@ -387,6 +394,6 @@ body {
   text-decoration: none;
 }
 
-.rights-text-link:hover {
+.rights-text-link {
   color: #4ec6ab;
 }
