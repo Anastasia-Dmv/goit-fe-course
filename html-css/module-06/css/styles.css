@@ -158,6 +158,8 @@ font-family: 'Roboto', sans-serif;--*/
   position: absolute;
   top: 0;
   left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info-title {
@@ -179,38 +181,25 @@ font-family: 'Roboto', sans-serif;--*/
 
 .alarm::before {
   background-image: url(../images/6m/icons/1alarm.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .linegraph::before {
   background-image: url(../images/6m/icons/2graph.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
 .comp::before {
   background-image: url(../images/6m/icons/3comp.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .book::before {
   background-image: url(../images/6m/icons/4book.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .home::before {
   background-image: url(../images/6m/icons/5home.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .mage::before {
   background-image: url(../images/6m/icons/6mage.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /*--TEAM--*/
