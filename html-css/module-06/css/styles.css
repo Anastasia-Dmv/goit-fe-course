@@ -195,26 +195,26 @@ font-family: 'Roboto', sans-serif;--*/
 }
 
 .alarm::before {
-  background-image: url(../images/6m/icons/1alarm.png);
+  background-image: url(../images/6m/1alarm.png);
 }
 
 .linegraph::before {
-  background-image: url(../images/6m/icons/2graph.png);
+  background-image: url(../images/6m/2graph.png);
 }
 .comp::before {
-  background-image: url(../images/6m/icons/3comp.png);
+  background-image: url(../images/6m/3comp.png);
 }
 
 .book::before {
-  background-image: url(../images/6m/icons/4book.png);
+  background-image: url(../images/6m/4book.png);
 }
 
 .home::before {
-  background-image: url(../images/6m/icons/5home.png);
+  background-image: url(../images/6m/5home.png);
 }
 
 .mage::before {
-  background-image: url(../images/6m/icons/6mage.png);
+  background-image: url(../images/6m/6mage.png);
 }
 
 /*--TEAM--*/
@@ -327,25 +327,25 @@ font-family: 'Roboto', sans-serif;--*/
 }
 
 .facebook {
-  background-image: url(../images/6m/icons/facebook.png);
+  background-image: url(../images/6m/facebook.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .twitter {
-  background-image: url(../images/6m/icons/twitter.png);
+  background-image: url(../images/6m/twitter.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .pint {
-  background-image: url(../images/6m/icons/pinterest.png);
+  background-image: url(../images/6m/pinterest.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .insta {
-  background-image: url(../images/6m/icons/instagram.png);
+  background-image: url(../images/6m/instagram.png);
   background-repeat: no-repeat;
   background-position: center;
 }
