@@ -10,9 +10,9 @@ html {
   padding: 0;
 }
 
-/* {
+/* * {
   outline: 3px solid royalblue;
-}*/
+} */
 
 ul,
 ol {
@@ -26,15 +26,15 @@ body {
   font-size: 0;
 }
 
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
 .navigation {
   background-color: white;
   padding-top: 28px;
   padding-bottom: 30px;
-}
-
-.navigation-container {
-  width: 1110px;
-  margin: 0 auto;
 }
 
 .logo {
@@ -43,8 +43,8 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 32px;
+  color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
-  color: #000000;
 }
 
 .logo::first-letter {
@@ -86,31 +86,29 @@ body {
 .slider-background {
   object-fit: cover;
   width: 100%;
-  height: 600px;
+  max-height: 600px;
 }
 
 .slider {
   position: relative;
 }
 
-.overlay {
+.overlay::before {
+  content: " ";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.5;
 }
 
-.slider-container {
+.slider-control {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 1110px;
-  height: 600px;
-
+  transform: translate(-50%, -50%);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -118,7 +116,7 @@ body {
 .button {
   width: 104px;
   height: 104px;
-  background-color: #4ec6ab;
+  background-color: rgba(78, 198, 172, 0.65);
   border: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -127,7 +125,7 @@ body {
 .prev {
   position: absolute;
   left: 0;
-  background-image: url(../images/prev.png);
+  background-image: url(../images/prev.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -136,21 +134,18 @@ body {
   position: absolute;
   right: 0;
 
-  background-image: url(../images/next.png);
+  background-image: url(../images/next.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button:hover {
-  background-color: rgba(78, 198, 171, 0.65);
+  background-color: rgba(78, 198, 171, 1);
 }
 
 /*--PARIS TOUR--*/
 
 .slider-title {
-  position: absolute;
-  top: 35%;
-  left: 15%;
   width: 748px;
   margin: auto;
 }
@@ -184,19 +179,22 @@ body {
 .collection {
   background-color: #e9f0fd;
   width: 100%;
+  padding-top: 90px;
+  padding-bottom: 102px;
+
+  margin: 0 auto;
 }
 
-.collection-container {
+.container {
   width: 1110px;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 95px;
 }
 
 .collection-title {
   font-family: serif;
   font-size: 48px;
   line-height: 52px;
+  font-weight: 800;
   color: #515151;
   font-family: "Roboto", sans-serif;
 
@@ -214,9 +212,12 @@ body {
   background-color: #4ec6ab;
   margin-top: 28px;
 }
+
 .collection-list-item {
+  position: relative;
+  float: left;
+  margin-right: 30px;
   width: 255px;
-  height: 322px;
   font-size: 17px;
   line-height: 19px;
   text-transform: uppercase;
@@ -225,9 +226,16 @@ body {
   color: white;
 }
 
+.overlay-on-img {
+  position: relative;
+}
+
 .photo-content {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
 .photo-content-name {
   position: relative;
   width: 255px;
@@ -251,17 +259,8 @@ body {
   top: 0;
 }
 
-.collection-list-item {
-  float: left;
-  margin-right: 30px;
-}
-
 .collection-list-item:last-child {
   margin-right: 0px;
-}
-
-.collection-list-item {
-  position: relative;
 }
 
 .overlay-content {
@@ -269,7 +268,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 88%;
+  height: 100%;
   border: 10px solid rgba(255, 255, 255, 0.11);
   background-clip: padding-box;
   background-color: rgba(0, 0, 0, 0.5);
@@ -279,6 +278,7 @@ body {
   margin-right: 5px;
   margin-bottom: 8px;
 }
+
 .overlay-content-list-icon-common {
   display: inline-block;
   width: 50px;
@@ -320,10 +320,6 @@ body {
   text-align: end;
 
   background-color: #323232;
-}
-
-.collection-list-item {
-  position: relative;
 }
 
 .overlay-content {

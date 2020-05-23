@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="widht=device--widht, initial-scale=1.0" />
     <title class="visually-hidden">Online-shopping</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/normalize.css" class="rel" />
     <link rel="stylesheet" href="./css/styles.css" class="rel" />
   </head>
 
   <body>
     <header>
-      <nav class="navigation">
-        <div class="navigation-container clearfix">
+      <div class="container">
+        <nav class="navigation clearfix">
           <a href="#" class="logo">Mart</a>
           <ul class="navigation-list">
             <li class="navigation-list-item">
@@ -37,189 +37,161 @@
               <a href="#" class="navigation-list-item-link">contact us</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+
     <main>
       <section class="slider">
-        <div class="slider-complex">
-          <img
-            class="slider-background"
-            src="./images/slide4.png"
-            alt="girls"
-          />
-          <div class="overlay"></div>
-        </div>
+        <div class="slider-complex overlay">
+          <img class="slider-background" src="./images/slide4.png" alt="girls" />
 
-        <div class="slider-container">
-          <button class="button prev"></button>
-          <button class="button next"></button>
-          <div class="slider-title">
-            <h2 class="slider-title-item">Affordable Paris tours</h2>
-            <p class="slider-title-options">
-              city tours / tour tickets / tour guides
-            </p>
+
+          <div class="slider-control container clearfix">
+            <button class="button prev"></button>
+            <button class="button next"></button>
+            <div class="slider-title">
+              <h2 class="slider-title-item">Affordable Paris tours</h2>
+              <p class="slider-title-options">
+                city tours / tour tickets / tour guides
+              </p>
+            </div>
           </div>
-        </div>
       </section>
 
       <section class="collection">
-        <div class="collection-container">
+        <div class="collection-c container">
           <h2 class="collection-title">New collection</h2>
 
           <ul class="collection-list clearfix">
             <li class="collection-list-item">
-              <img
-                src="./images/cut/1man.jpg"
-                alt="man in blue tshirt"
-                width="255"
-                height="281"
-                class="photo-content"
-              />
+
+              <div class="overlay-on-img">
+
+                <img src="./images/1man.jpg" alt="man in blue tshirt" width="255" class="photo-content" height="281" />
+
+                <div class="overlay-content">
+                  <ul class="overlay-content-list clearfix">
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common heart"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common direction"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common clock"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common-basket">
+                        add to cart
+                      </button>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+
 
               <div class="photo-content-name">
                 <h3 class="photo-content-product">blue tshirt</h3>
                 <p class="photo-content-price">$26</p>
               </div>
 
-              <div class="overlay-content">
-                <ul class="overlay-content-list clearfix">
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common heart"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common direction"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common clock"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button class="overlay-content-list-icon-common-basket">
-                      add to cart
-                    </button>
-                  </li>
-                </ul>
-              </div>
+
             </li>
 
             <li class="collection-list-item">
-              <img
-                src="./images/cut/2woman.jpg"
-                alt="woman in shirt"
-                width="255"
-                height="281"
-                class="photo-content"
-              />
+
+              <div class="overlay-on-img">
+
+                <img src="./images/2woman.jpg" alt="woman in shirt" width="255" height="281" class="photo-content" />
+                <div class="overlay-content">
+                  <ul class="overlay-content-list clearfix">
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common heart"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common direction"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common clock"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common-basket">
+                        add to cart
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
               <div class="photo-content-name">
                 <h3 class="photo-content-product">Woman shirt</h3>
                 <p class="photo-content-price">$31</p>
               </div>
-              <div class="overlay-content">
-                <ul class="overlay-content-list clearfix">
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common heart"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common direction"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common clock"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button class="overlay-content-list-icon-common-basket">
-                      add to cart
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
 
+
+            </li>
             <li class="collection-list-item">
-              <img
-                src="./images/cut/3m.jpg"
-                alt="man in yellow thirt"
-                width="255"
-                height="281"
-                class="photo-content"
-              />
+
+              <div class="overlay-on-img">
+
+
+                <img src="./images/3m.jpg" alt="man in yellow thirt" width="255" height="281" class="photo-content" />
+                <div class="overlay-content">
+                  <ul class="overlay-content-list clearfix">
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common heart"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common direction"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common clock"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common-basket">
+                        add to cart
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="photo-content-name">
                 <h3 class="photo-content-product">yellow tshirt</h3>
                 <p class="photo-content-price">$21</p>
               </div>
-              <div class="overlay-content">
-                <ul class="overlay-content-list clearfix">
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common heart"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common direction"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common clock"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button class="overlay-content-list-icon-common-basket">
-                      add to cart
-                    </button>
-                  </li>
-                </ul>
-              </div>
+
             </li>
 
             <li class="collection-list-item">
-              <img
-                src="./images/cut/4.jpg"
-                alt="woman in lingerie"
-                width="255"
-                height="281"
-                class="photo-content"
-              />
+              <div class="overlay-on-img">
+                <img src="./images/4.jpg" alt="woman in lingerie" width="255" height="281" class="photo-content" />
+                <div class="overlay-content">
+                  <ul class="overlay-content-list clearfix">
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common heart"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common direction"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common clock"></button>
+                    </li>
+                    <li class="overlay-content-list-icon">
+                      <button class="overlay-content-list-icon-common-basket">
+                        add to cart
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="photo-content-name">
                 <h3 class="photo-content-product">cool lingerie</h3>
                 <p class="photo-content-price">$56</p>
               </div>
-              <div class="overlay-content">
-                <ul class="overlay-content-list clearfix">
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common heart"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common direction"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button
-                      class="overlay-content-list-icon-common clock"
-                    ></button>
-                  </li>
-                  <li class="overlay-content-list-icon">
-                    <button class="overlay-content-list-icon-common-basket">
-                      add to cart
-                    </button>
-                  </li>
-                </ul>
-              </div>
+
             </li>
           </ul>
         </div>
@@ -235,4 +207,5 @@
       </section>
     </footer>
   </body>
+
 </html>
