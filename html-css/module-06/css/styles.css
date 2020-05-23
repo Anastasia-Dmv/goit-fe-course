@@ -9,6 +9,20 @@ html {
   margin: 0;
   padding: 0;
 }
+.visually-hidden:not(:focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*--* {
   outline: 3px solid royalblue;
@@ -31,6 +45,7 @@ ol {
 /*--font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;--*/
+
 .navigation-container {
   width: 1210px;
   margin: 0 auto;
@@ -397,7 +412,10 @@ font-family: 'Roboto', sans-serif;--*/
   font-weight: 600;
   border: none;
 }
-
+.submit:hover {
+  background-color: #f38181;
+  box-shadow: 2px 2px 5px #333333;
+}
 .placeholder {
   width: 230px;
   height: 40px;
