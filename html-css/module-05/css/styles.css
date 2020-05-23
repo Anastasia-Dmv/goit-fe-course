@@ -238,23 +238,24 @@ body {
 
 .photo-content-name {
   position: relative;
-  width: 255px;
-  height: 41px;
-
+  display: inline-block;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.84);
 }
 
 .photo-content-product {
-  padding: 10px 0px 10px 12px;
+  width: 100%;
+  padding: 13px 0px 10px 12px;
 }
 
 .photo-content-price {
+  position: absolute;
   width: 55px;
   height: 41px;
   text-align: center;
   padding: 10px 0px;
   background-color: rgba(255, 255, 255, 0.384);
-  position: absolute;
+
   right: 0;
   top: 0;
 }
@@ -275,6 +276,7 @@ body {
 }
 
 .overlay-content-list-icon {
+  float: left;
   margin-right: 5px;
   margin-bottom: 8px;
 }
@@ -283,10 +285,8 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
-
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.2);
-
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -335,10 +335,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.overlay-content-list-icon {
-  float: left;
-  cursor: pointer;
-}
 
 .overlay-content-list-icon:nth-of-type(3) {
   margin-right: 0;
