@@ -233,7 +233,7 @@ ol {
 
 .section-list-item-info {
   font-size: 14px;
-  font: weight 400;
+  font-weight: 400;
   font-family: "RobotoSlab",
     "Helvetica",
     sans-serif;
