@@ -268,4 +268,49 @@ ol {
   text-align: center;
 }
 
-.
+.contacts-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.contacts-form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.contacts-form-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-input {
+  width: 455px;
+  height: 52px;
+  background-color: rgb(250, 250, 250);
+  padding-left: 15px;
+
+}
+
+.contact-form-input:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+.contacts-form-message {
+  width: 455px;
+  height: 212px;
+  background-color: rgb(250, 250, 250);
+}
+
+.form-submit {
+  margin: 0 auto;
+
+  width: 240px;
+  height: 65px;
+  background-color: rgb(250, 250, 250);
+
+}
