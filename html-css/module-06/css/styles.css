@@ -269,11 +269,12 @@ font-family: 'Roboto', sans-serif;--*/
 .overlay {
   position: relative;
   margin-bottom: 27px;
+  transition: all 0.2s linear;
 }
 
-.overlay-gradient {
-  opacity: 0;
-  visibility: hidden;
+.overlay-gradient:hover {
+  opacity: 1;
+  visibility: visible;
 }
 
 .overlay-gradient {
@@ -285,13 +286,10 @@ font-family: 'Roboto', sans-serif;--*/
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
   );
-}
-
-.overlay-gradient {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s linear;
 }
 
 .overlay-gradient-list {
@@ -314,7 +312,7 @@ font-family: 'Roboto', sans-serif;--*/
   background-color: #95e1d3;
 }
 
-.photo-list-item:hover .overlay-gradient {
+.photo-list-item:hover .overlay {
   opacity: 1;
   visibility: visible;
   transform: translate(-12px, -12px);
