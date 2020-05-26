@@ -93,7 +93,9 @@ ol {
   padding-bottom: 138px;
   background-image: url(../images/1sbanner.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-size: cover;
+
 
 
 }
@@ -213,6 +215,7 @@ ol {
   font-weight: bold;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 18px;
 }
 
 .partners-list-item-photo {
@@ -220,6 +223,11 @@ ol {
   width: 122px;
   height: 122px;
   border-radius: 61px;
+
+}
+
+.partners-list-item-picture {
+  margin-bottom: 21px;
 }
 
 .partners-list-item-picture:after {
@@ -229,15 +237,33 @@ ol {
   height: 37px;
   border: 4px solid rgb(255, 255, 255);
   border-radius: 50%;
-  background-color: rgb(255, 78, 80);
-  position: relative;
+  position: absolute;
   left: 65%;
   transform: translate(-50%, -100%);
-  background-image: url(../images/1icon.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.tv:after {
+  background-image: url(../images/1icon.png);
+  background-color: rgb(255, 78, 80);
+}
+
+.vase:after {
+  background-image: url(../images/2icon.png);
+  background-color: rgb(255, 165, 7);
+}
+
+.tea:after {
+  background-image: url(../images/3icon.png);
+  background-color: rgb(28, 215, 173);
+}
+
+
+.telegram:after {
+  background-image: url(../images/4icon.png);
+  background-color: rgb(78, 115, 219);
+}
 
 
 .partners-list-item {
@@ -258,4 +284,23 @@ ol {
   font-family: "Roboto", sans-serif;
   color: rgb(102, 102, 102);
   margin-bottom: 26px;
+  width: 220px;
+}
+
+.partners-button {
+  width: 284px;
+  height: 44px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 17px
+}
+
+.partners-button:hover {
+  background-color: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
 }
