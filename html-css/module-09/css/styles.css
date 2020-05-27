@@ -89,8 +89,7 @@ button {
   outline: none;
 }
 
-/* ======HEADER=========== */
-
+/* ======   NAVIGATION  =========== */
 .header {
   padding: 20px 0 20px 0;
   background-color: rgba(10, 10, 10, 0.192);
@@ -100,22 +99,47 @@ button {
   width: 100%;
 }
 
+.navigation-list-item {
+  width: 90px;
+  height: 36px;
+  border: none;
+  text-align: center;
+  padding-top: 7px;
+
+}
+
+.logo-in-nav {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.navigation-list-item-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 254, 254);
+  font-weight: bold;
+  line-height: 17px;
+  background-color: transparent;
+  border: none;
+}
+
+.navigation-list-item:hover {
+  border: 2px solid rgb(255, 254, 254);
+  border-radius: 18px;
+
+}
+
+/* ======   NAVIGATION  =========== */
+
 .container {
   text-align: center;
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.justify-content-center {
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
 }
 
 .hero {
@@ -139,31 +163,7 @@ button {
 
 
 
-.navigation-list-item {
-  width: 90px;
-  height: 36px;
-  border: none;
-  text-align: center;
-  padding-top: 7px;
-  background-color: transparent;
-}
-
-.navigation-list-item-link {
-  text-decoration: none;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 17px;
-}
-
-.navigation-list-item:hover {
-  border: 2px solid rgb(255, 254, 254);
-  border-radius: 18px;
-}
-
 @media (max-width:767px) {
-
 
   .logo {
     visibility: visible;
@@ -186,16 +186,14 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 36px;
-
   margin-bottom: 22px;
   margin-top: 0px;
   text-align: center;
 }
 
 .header-description {
-
   font-size: 18px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
   line-height: 22px;
   font-weight: 100;
@@ -227,16 +225,7 @@ button {
 
 /* ======Partners=========== */
 
-.logo-in-nav {
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Montserrat";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 24px;
-  margin-bottom: 35px;
-}
+
 
 @media (max-width: 767px) {
   .partners {
@@ -357,6 +346,28 @@ button {
 
   /*===========TABLET===========  */
 
+  @media (min-width: 768px) {
+
+
+    .logo-in-nav {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      visibility: visible;
+      display: block;
+
+
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .logo {}
+  }
+
+
+  /* 
   @media (min-width: 768px) {
     .header {
       padding-top: 40px;
@@ -491,4 +502,4 @@ button {
     .partners-list-item:nth-of-type(4) {
       order: 3;
     }
-  }
+  } */
