@@ -154,9 +154,15 @@ button {
   background-position: top;
   background-size: cover;
   padding-top: 226px;
-  padding-bottom: 138px;
   background-size: cover;
   background-image: url("../images/1smallbanner.png");
+
+}
+
+@media (max-width:767px) {
+  .hero {
+    padding-bottom: 138px;
+  }
 
 }
 
@@ -190,26 +196,44 @@ button {
 }
 
 .header-title {
-  font-size: 30px;
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 36px;
-  margin-bottom: 22px;
-  margin-top: 0px;
   text-align: center;
 }
 
+
+
 .header-description {
-  font-size: 18px;
+
+
   font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
-  line-height: 22px;
   font-weight: 100;
-  width: 220px;
   margin: auto;
-  margin-bottom: 17px;
+
+}
+
+@media(max-width:767px) {
+  .header-description {
+    width: 220px;
+  }
+
+  .header-title {
+    font-size: 30px;
+    margin-bottom: 22px;
+    margin-top: 0px;
+    line-height: 36px;
+
+
+  }
+
+  .header-description {
+    font-size: 18px;
+    margin-bottom: 17px;
+    line-height: 22px;
+  }
 }
 
 .header-button {
@@ -369,6 +393,12 @@ button {
 
   }
 
+  .hero {
+    padding-bottom: 238px;
+    background-size: cover;
+    background-image: url("../images/2mdbanner.png");
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -389,9 +419,10 @@ button {
   }
 
 
+
 }
 
-@media (min-width: 768px) and (max-width: 1129px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .partners-list-item:nth-of-type(2) {
     order: 2;
   }
@@ -417,4 +448,23 @@ button {
   }
 
 
+}
+
+@media(min-width: 992px) {
+  .hero {
+    background-size: cover;
+    background-image: url("../images/3lgbanner.png");
+  }
+
+  .header-title {
+    font-size: 52px;
+    line-height: 64px;
+    margin-bottom: 35px;
+
+  }
+
+  .header-description {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
