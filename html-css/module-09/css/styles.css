@@ -119,6 +119,13 @@ button {
   margin-bottom: 35px;
 }
 
+@media (max-width: 767px) {
+  .logo-in-nav {
+    margin-bottom: 35px;
+  }
+
+}
+
 .navigation-list-item-link {
   text-decoration: none;
   font-size: 14px;
@@ -161,21 +168,24 @@ button {
   position: relative;
 }
 
-
+.logo {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
 
 @media (max-width:767px) {
 
   .logo {
     visibility: visible;
-    display: block;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 24px;
-    margin-bottom: 35px;
+
+
   }
 }
 
@@ -225,7 +235,9 @@ button {
 
 /* ======Partners=========== */
 
-
+.partners {
+  padding: 70px 0 58px 0;
+}
 
 @media (max-width: 767px) {
   .partners {
@@ -241,265 +253,168 @@ button {
 
 
   }
+}
 
+.partners-title {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.partners-list-item-photo {
+  display: inline-block;
+  width: 122px;
+  height: 122px;
+  border-radius: 61px;
+}
+
+.partners-list-item-picture {
+  margin-bottom: 21px;
+  width: 122px;
+  height: 122px;
+  margin: auto;
+  margin-bottom: 18px;
+}
+
+.partners-list-item-picture:after {
+  display: block;
+  content: " ";
+  width: 37px;
+  height: 37px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  left: 90%;
+  transform: translate(-50%, -100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tv:after {
+  background-image: url(../images/1icon.png);
+  background-color: rgb(255, 78, 80);
+}
+
+.vase:after {
+  background-image: url(../images/2icon.png);
+  background-color: rgb(255, 165, 7);
+}
+
+.tea:after {
+  background-image: url(../images/3icon.png);
+  background-color: rgb(28, 215, 173);
+}
+
+.telegram:after {
+  background-image: url(../images/4icon.png);
+  background-color: rgb(78, 115, 219);
+}
+
+.partners-list-item {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.partners-list-item-name {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.partners-list-item-hobby {
+  font-family: "Roboto", sans-serif;
+  color: rgb(102, 102, 102);
+  margin-bottom: 26px;
+  width: 245px;
+  margin: auto;
+  margin-bottom: 27px;
+}
+
+.partners-button {
+  width: 284px;
+  height: 44px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 17px;
+  margin: auto;
+}
+
+.partners-button:hover {
+  background-color: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
+
+}
+
+
+/*===========TABLET===========*/
+@media (min-width: 768px) {
+
+
+  .logo-in-nav {
+    visibility: visible;
+    display: block;
+    margin-bottom: 0;
+
+
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .logo {
+    visibility: hidden;
+    display: none;
+    opacity: 1;
+
+  }
 
   .partners-title {
-    font-size: 22px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 26px;
-    text-align: center;
-    margin-bottom: 18px;
-  }
-
-  .partners-list-item-photo {
-    display: inline-block;
-    width: 122px;
-    height: 122px;
-    border-radius: 61px;
-  }
-
-  .partners-list-item-picture {
-    margin-bottom: 21px;
-    width: 122px;
-    height: 122px;
-    margin: auto;
-    margin-bottom: 18px;
-  }
-
-  .partners-list-item-picture:after {
-    display: block;
-    content: " ";
-    width: 37px;
-    height: 37px;
-    border: 4px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    position: relative;
-    left: 90%;
-    transform: translate(-50%, -100%);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .tv:after {
-    background-image: url(../images/1icon.png);
-    background-color: rgb(255, 78, 80);
-  }
-
-  .vase:after {
-    background-image: url(../images/2icon.png);
-    background-color: rgb(255, 165, 7);
-  }
-
-  .tea:after {
-    background-image: url(../images/3icon.png);
-    background-color: rgb(28, 215, 173);
-  }
-
-  .telegram:after {
-    background-image: url(../images/4icon.png);
-    background-color: rgb(78, 115, 219);
+    margin-bottom: 35px;
   }
 
   .partners-list-item {
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-  }
-
-  .partners-list-item-name {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  .partners-list-item-hobby {
-    font-family: "Roboto", sans-serif;
-    color: rgb(102, 102, 102);
-    margin-bottom: 26px;
-    width: 245px;
-    margin: auto;
-    margin-bottom: 27px;
-  }
-
-  .partners-button {
-    width: 284px;
-    height: 44px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 78, 80);
-    border-radius: 20px;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 78, 80);
-    font-weight: bold;
-    line-height: 17px;
-    margin: auto;
-  }
-
-  .partners-button:hover {
-    background-color: rgb(255, 78, 80);
-    color: rgb(255, 255, 255);
-
-  }
-
-  /*===========TABLET===========  */
-
-  @media (min-width: 768px) {
-
-
-    .logo-in-nav {
-      text-align: center;
-      position: absolute;
-      top: 0;
-      visibility: visible;
-      display: block;
-
-
-    }
-
-  }
-
-  @media (min-width: 768px) {
-
-    .logo {}
+    width: 236px;
   }
 
 
-  /* 
-  @media (min-width: 768px) {
-    .header {
-      padding-top: 40px;
-      padding-bottom: 233px;
-      background-size: cover;
-      background-image: url("../images/2mdbanner.png");
-    }
+}
 
-
-
-    .container {
-      width: 492px;
-    }
-
-    .logo {
-      opacity: 1;
-      visibility: hidden;
-
-    }
-
-    .navigation {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: baseline;
-      width: 680px;
-      margin-bottom: 150px;
-    }
-
-    .navigation-list {
-      padding-bottom: 0;
-    }
-
-    .header-title-span {
-      display: block;
-    }
-
-    .header-title {
-      font-size: 52px;
-      line-height: 62px;
-      width: 660px;
-      margin-bottom: 40px;
-      margin-top: 0;
-    }
-
-    .header-description {
-      width: 404px;
-      margin-bottom: 40px;
-      font-size: 24px;
-      line-height: 29px;
-    }
-
-    .partners {
-      padding: 70px 0 58px 0;
-    }
-
-    .partners-title {
-      margin-bottom: 35px;
-    }
-
-    .partners-list-item {
-      width: 236px;
-    }
-
-    .partners-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+@media (min-width: 768px) and (max-width: 1129px) {
+  .partners-list-item:nth-of-type(2) {
+    order: 2;
   }
 
-  @media (min-width: 768px) and (max-width: 1129px) {
-    .partners-list-item:nth-of-type(2) {
-      order: 1;
-    }
-
-    .partners-list-item:nth-of-type(3) {
-      order: 2;
-    }
-
-    .partners-list-item:nth-of-type(4) {
-      order: 3;
-    }
-
-    .partners-list-item:nth-of-type(n) {
-      margin-bottom: 56px;
-    }
-
-    .partners-list-item:nth-of-type(n + 3) {
-      margin-bottom: 40px;
-    }
+  .partners-list-item:nth-of-type(3) {
+    order: 1;
   }
 
-  @media (min-width: 1130px) {
-    .header {
-      background-size: cover;
-      background-image: url("../images/3lgbanner.png");
-    }
+  .partners-list-item:nth-of-type(4) {
+    order: 3;
+  }
 
-    .container {
-      width: 942px;
-    }
+  .partners-list-item:nth-of-type(n) {
+    margin-bottom: 56px;
+  }
 
-    .navigation {
-      width: 100%;
-    }
+  .partners-list-item:nth-of-type(2n) {
+    margin-bottom: 40px;
+  }
 
-    .partners-list-item {
-      margin-bottom: 0;
-      width: 222px;
-    }
+  .partners-list-item:nth-of-type(2n+1) {
+    margin-bottom: 56px;
+  }
 
-    .partners-list {
-      width: 100%;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      margin-bottom: 60px;
-    }
 
-    .partners {
-      padding: 68px 0 70px 0;
-    }
-
-    .partners-list-item:nth-of-type(2) {
-      order: 2;
-    }
-
-    .partners-list-item:nth-of-type(3) {
-      order: 1;
-    }
-
-    .partners-list-item:nth-of-type(4) {
-      order: 3;
-    }
-  } */
+}
