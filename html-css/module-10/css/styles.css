@@ -147,12 +147,12 @@ button {
   display: inline-block;
 }
 .additioanal-item_svg {
-  widows: 15px;
+  width: 15px;
   height: 15px;
-  background-color: rgba(255, 255, 255, 0.514);
+  background-color: rgba(121, 48, 48, 0.514);
 }
 .navigation-menu {
-  width: 53%;
+  width: 60%;
 }
 
 .navigation-menu-list {
