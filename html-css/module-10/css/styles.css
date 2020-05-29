@@ -89,9 +89,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-* {
+/* * {
   outline: 3px solid royalblue;
-}
+} */
 
 ul,
 ol {
