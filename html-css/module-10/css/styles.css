@@ -112,6 +112,8 @@ button {
 
 .nav {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container {
@@ -125,11 +127,12 @@ button {
   padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .navigation-menu {
   display: flex;
-  flex-basis: 46%;
+  flex-basis: 600px;
 
 
 }
@@ -145,7 +148,7 @@ button {
 }
 
 .navigation-menu-list_item {
-  width: 100px;
+  margin: 0 30px 0 30px;
 }
 
 .navigation-menu_additional {
@@ -175,25 +178,50 @@ button {
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 35px;
 }
 
+.navigation_item-link:after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(252, 227, 138);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
 
+.navigation_item-link:hover:after,
+.navigation_item-link:focus:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation_item-link:hover,
+.navigation_item-link:focus {
+  color: rgb(252, 227, 138);
+
+}
 
 .additional-item {
   display: inline-block;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .additional-item_svg {
-  width: 15px;
-  height: 15px;
-
-
+  width: 20px;
+  height: 20px;
+  fill: white;
+  outline: none;
 }
 
-
+.additional-item:hover .additional-item_svg {
+  fill: rgb(252, 227, 138);
+  transform: scale(1.2);
+}
 
 
 /* ===============NAVIGATION============== */
@@ -256,8 +284,15 @@ button {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.headline_btn:hover {
+  color: white;
+  background-color: rgb(243, 129, 129, 0.9);
+  box-shadow: 2px 2px 2px rgba(85, 77, 46, 0.9);
+  border: none;
+}
+
 .service {
-  padding: 52px 0 96px 0;
+  padding-top: 52px;
   text-align: center;
 }
 
@@ -395,6 +430,7 @@ button {
 
 .team_title-description {
   width: 80%;
+  margin: auto;
   margin-bottom: 90px;
 }
 
@@ -409,7 +445,7 @@ button {
 
 .overlay_photo {
   display: block;
-  margin-bottom: 20px;
+
 }
 
 .team-list_item-name {
@@ -474,6 +510,7 @@ button {
 
 .team-list_item-overlay {
   transition: all 0.2s linear;
+  margin-bottom: 27px;
 }
 
 .team-list_item:hover .team-list_item-overlay {
